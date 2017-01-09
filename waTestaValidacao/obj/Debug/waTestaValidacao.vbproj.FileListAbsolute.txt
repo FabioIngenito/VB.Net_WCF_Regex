@@ -1,0 +1,12 @@
+C:\Users\Fabio.Ingenito.COSINDNS\Documents\Visual Studio 2015\Projects\TEMP\WCF\waTestaValidacao\bin\Debug\waTestaValidacao.exe.config
+C:\Users\Fabio.Ingenito.COSINDNS\Documents\Visual Studio 2015\Projects\WCF\waTestaValidacao\bin\Debug\waTestaValidacao.exe.config
+C:\Users\Fabio.Ingenito.COSINDNS\Documents\Visual Studio 2015\Projects\WCF\waTestaValidacao\bin\Debug\waTestaValidacao.exe
+C:\Users\Fabio.Ingenito.COSINDNS\Documents\Visual Studio 2015\Projects\WCF\waTestaValidacao\bin\Debug\waTestaValidacao.pdb
+C:\Users\Fabio.Ingenito.COSINDNS\Documents\Visual Studio 2015\Projects\WCF\waTestaValidacao\bin\Debug\waTestaValidacao.xml
+C:\Users\Fabio.Ingenito.COSINDNS\Documents\Visual Studio 2015\Projects\WCF\waTestaValidacao\obj\Debug\waTestaValidacao.vbprojResolveAssemblyReference.cache
+C:\Users\Fabio.Ingenito.COSINDNS\Documents\Visual Studio 2015\Projects\WCF\waTestaValidacao\obj\Debug\waTestaValidacao.frmTestaValidacao.resources
+C:\Users\Fabio.Ingenito.COSINDNS\Documents\Visual Studio 2015\Projects\WCF\waTestaValidacao\obj\Debug\waTestaValidacao.Resources.resources
+C:\Users\Fabio.Ingenito.COSINDNS\Documents\Visual Studio 2015\Projects\WCF\waTestaValidacao\obj\Debug\waTestaValidacao.vbproj.GenerateResource.Cache
+C:\Users\Fabio.Ingenito.COSINDNS\Documents\Visual Studio 2015\Projects\WCF\waTestaValidacao\obj\Debug\waTestaValidacao.exe
+C:\Users\Fabio.Ingenito.COSINDNS\Documents\Visual Studio 2015\Projects\WCF\waTestaValidacao\obj\Debug\waTestaValidacao.xml
+C:\Users\Fabio.Ingenito.COSINDNS\Documents\Visual Studio 2015\Projects\WCF\waTestaValidacao\obj\Debug\waTestaValidacao.pdb

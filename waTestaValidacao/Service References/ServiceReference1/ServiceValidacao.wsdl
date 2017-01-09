@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceValidacao" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:55002/ServiceValidacao.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:55002/ServiceValidacao.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:55002/ServiceValidacao.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Wcf_Validacao" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IValidacao_ObterDados_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObterDados" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ObterDados_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterDadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ObterDadosUsandoContratoDeDados_InputMessage">
+    <wsdl:part name="parameters" element="tns:ObterDadosUsandoContratoDeDados" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ObterDadosUsandoContratoDeDados_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ObterDadosUsandoContratoDeDadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ValidarNomesUsuarios_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarNomesUsuarios" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ValidarNomesUsuarios_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarNomesUsuariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ValidarNumerosTelefonicos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarNumerosTelefonicos" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ValidarNumerosTelefonicos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarNumerosTelefonicosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ValidarEmail_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarEmail" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ValidarEmail_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarEmailResponse" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ValidarCodigosPostais_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarCodigosPostais" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ValidarCodigosPostais_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarCodigosPostaisResponse" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ValidarEnderecosIP_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarEnderecosIP" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ValidarEnderecosIP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarEnderecosIPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ValidarCoresHexadecimais_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarCoresHexadecimais" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ValidarCoresHexadecimais_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarCoresHexadecimaisResponse" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ValidarComentariosMultiLinha_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarComentariosMultiLinha" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ValidarComentariosMultiLinha_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarComentariosMultiLinhaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ValidarDatas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarDatas" />
+  </wsdl:message>
+  <wsdl:message name="IValidacao_ValidarDatas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidarDatasResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IValidacao">
+    <wsdl:operation name="ObterDados">
+      <wsdl:input wsaw:Action="http://tempuri.org/IValidacao/ObterDados" message="tns:IValidacao_ObterDados_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IValidacao/ObterDadosResponse" message="tns:IValidacao_ObterDados_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ObterDadosUsandoContratoDeDados">
+      <wsdl:input wsaw:Action="http://tempuri.org/IValidacao/ObterDadosUsandoContratoDeDados" message="tns:IValidacao_ObterDadosUsandoContratoDeDados_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IValidacao/ObterDadosUsandoContratoDeDadosResponse" message="tns:IValidacao_ObterDadosUsandoContratoDeDados_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarNomesUsuarios">
+      <wsdl:input wsaw:Action="http://tempuri.org/IValidacao/ValidarNomesUsuarios" message="tns:IValidacao_ValidarNomesUsuarios_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IValidacao/ValidarNomesUsuariosResponse" message="tns:IValidacao_ValidarNomesUsuarios_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarNumerosTelefonicos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IValidacao/ValidarNumerosTelefonicos" message="tns:IValidacao_ValidarNumerosTelefonicos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IValidacao/ValidarNumerosTelefonicosResponse" message="tns:IValidacao_ValidarNumerosTelefonicos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarEmail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IValidacao/ValidarEmail" message="tns:IValidacao_ValidarEmail_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IValidacao/ValidarEmailResponse" message="tns:IValidacao_ValidarEmail_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarCodigosPostais">
+      <wsdl:input wsaw:Action="http://tempuri.org/IValidacao/ValidarCodigosPostais" message="tns:IValidacao_ValidarCodigosPostais_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IValidacao/ValidarCodigosPostaisResponse" message="tns:IValidacao_ValidarCodigosPostais_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarEnderecosIP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IValidacao/ValidarEnderecosIP" message="tns:IValidacao_ValidarEnderecosIP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IValidacao/ValidarEnderecosIPResponse" message="tns:IValidacao_ValidarEnderecosIP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarCoresHexadecimais">
+      <wsdl:input wsaw:Action="http://tempuri.org/IValidacao/ValidarCoresHexadecimais" message="tns:IValidacao_ValidarCoresHexadecimais_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IValidacao/ValidarCoresHexadecimaisResponse" message="tns:IValidacao_ValidarCoresHexadecimais_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarComentariosMultiLinha">
+      <wsdl:input wsaw:Action="http://tempuri.org/IValidacao/ValidarComentariosMultiLinha" message="tns:IValidacao_ValidarComentariosMultiLinha_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IValidacao/ValidarComentariosMultiLinhaResponse" message="tns:IValidacao_ValidarComentariosMultiLinha_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ValidarDatas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IValidacao/ValidarDatas" message="tns:IValidacao_ValidarDatas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IValidacao/ValidarDatasResponse" message="tns:IValidacao_ValidarDatas_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IValidacao" type="tns:IValidacao">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObterDados">
+      <soap:operation soapAction="http://tempuri.org/IValidacao/ObterDados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObterDadosUsandoContratoDeDados">
+      <soap:operation soapAction="http://tempuri.org/IValidacao/ObterDadosUsandoContratoDeDados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarNomesUsuarios">
+      <soap:operation soapAction="http://tempuri.org/IValidacao/ValidarNomesUsuarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarNumerosTelefonicos">
+      <soap:operation soapAction="http://tempuri.org/IValidacao/ValidarNumerosTelefonicos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarEmail">
+      <soap:operation soapAction="http://tempuri.org/IValidacao/ValidarEmail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarCodigosPostais">
+      <soap:operation soapAction="http://tempuri.org/IValidacao/ValidarCodigosPostais" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarEnderecosIP">
+      <soap:operation soapAction="http://tempuri.org/IValidacao/ValidarEnderecosIP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarCoresHexadecimais">
+      <soap:operation soapAction="http://tempuri.org/IValidacao/ValidarCoresHexadecimais" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarComentariosMultiLinha">
+      <soap:operation soapAction="http://tempuri.org/IValidacao/ValidarComentariosMultiLinha" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ValidarDatas">
+      <soap:operation soapAction="http://tempuri.org/IValidacao/ValidarDatas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceValidacao">
+    <wsdl:port name="BasicHttpBinding_IValidacao" binding="tns:BasicHttpBinding_IValidacao">
+      <soap:address location="http://localhost:55002/ServiceValidacao.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
